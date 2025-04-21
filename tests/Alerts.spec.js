@@ -20,7 +20,7 @@ test('confirmation alert', async ({page}) =>{
     })
  await page.click('#confirmBtn')
  await page.waitForTimeout(3000)
-
+})
 test('prompt alert', async ({page}) =>{
     await page.goto('https://testautomationpractice.blogspot.com/')
     page.on('dialog' ,async dialog =>{
@@ -32,6 +32,3 @@ test('prompt alert', async ({page}) =>{
     await page.click('#promptBtn')
     await page.waitForTimeout(3000)
 })
-
-
-
